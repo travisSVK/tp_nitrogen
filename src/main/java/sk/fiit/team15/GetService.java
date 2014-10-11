@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 public class GetService {
 
 	@GET
-	@Path("sayHi/{name}")
+	@Path("sayHii/{name}")
 	public Response getMsg(@PathParam("name") String name) {
 		return Response.status(200).entity("What is going on " + name.toUpperCase()).build();
 	}
